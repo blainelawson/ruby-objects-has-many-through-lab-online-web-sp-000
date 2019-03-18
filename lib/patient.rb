@@ -20,6 +20,12 @@ class Patient
     end
   end
 
+  def doctors
+    appointments.collect do |appointment|
+      binding.pry
+    end
+  end
+
   def self.all
     @@all
   end
