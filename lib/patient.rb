@@ -12,6 +12,9 @@ class Patient
   end
 
   def appointments
+    Appointment.all.select do |appointment|
+      binding.pry
+    end
   end
 
   def self.all
